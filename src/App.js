@@ -3,6 +3,7 @@ import axios from "axios";
 import "./App.css";
 import Header from "./components/Header";
 import CharacterGrid from "./components/CharacterGrid";
+import Search from "./components/Search";
 
 const App = () => {
 
@@ -28,6 +29,7 @@ fetchItems()
     <div className="App">
       <div className="Container">
         <Header />
+        <Search />
 
         <CharacterGrid loading={loading} items={items}/>
       </div>
