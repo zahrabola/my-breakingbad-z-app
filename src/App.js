@@ -17,12 +17,12 @@ const fetchItems = async () => {
 
 const result = await axios(`https://www.breakingbadapi.com/api/characters?name=${query}`)
 
-console.log(result.data)
+//console.log(result.data)
 setItems(result.data)
 setLoading(false)
 }
 fetchItems()
-}, [])
+}, [query])
 
 
 
@@ -30,7 +30,7 @@ fetchItems()
     <div className="App">
       <div className="Container">
         <Header />
-        <Search />
+        <Search  getQuery={(q) => setQuery(q)}/>
 
         <CharacterGrid loading={loading} items={items}/>
       </div>
