@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
 import Header from "./components/Header";
+import CharacterGrid from "./components/CharacterGrid";
 
 const App = () => {
 
@@ -27,6 +28,8 @@ fetchItems()
     <div className="App">
       <div className="Container">
         <Header />
+
+        <CharacterGrid loading={loading} items={items}/>
       </div>
     </div>
   );

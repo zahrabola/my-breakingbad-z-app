@@ -26,3 +26,9 @@ header img {
 justify-content: center;
   padding: 10px;
 }
+.cards {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
