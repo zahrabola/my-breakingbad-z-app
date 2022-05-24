@@ -24,6 +24,9 @@ const Characteritem = ({item}) => {
               <li>
                 <strong>Status:</strong> {item.status}
               </li>
+              <li>
+                <strong>Series:</strong> {item.category}
+              </li>
             </ul>
           </div>
         </div>
