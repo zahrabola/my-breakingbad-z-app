@@ -26,6 +26,8 @@ fetchItems()
 
 
 
+
+
   return (
     <div className="App">
       <div className="Container">
@@ -34,6 +36,7 @@ fetchItems()
 
         <CharacterGrid loading={loading} items={items}/>
       </div>
+      <div><small>Coded by Zahra Olanrewaju </small></div>
     </div>
   );
 };
